@@ -1,0 +1,25 @@
+services:
+    nginx:
+        image: 873271/configuration4:configuration4_nginx
+        restart: always
+        ports:
+            - "8080:80"
+        container_name: nginx
+    node1:
+        image: 873271/configuration4:configuration4_node1
+        restart: always
+        ports:
+            - "3000"
+        container_name: node1
+    node2:
+        image: 873271/configuration4:configuration4_node2
+        restart: always
+        ports:
+            - "3000"
+        container_name: node2
+    node3:
+        image: 873271/configuration4:configuration4_node3
+        restart: always
+        ports:
+            - "3000"
+        container_name: node3
